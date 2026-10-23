@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Local Twitch chat fixture</title></head>
+<body>
+  <main aria-label="Fixture chat">
+    <div id="messages" role="log" aria-live="polite">
+      <div id="plain" class="chat-line__message" data-a-target="chat-line-message">
+        <span class="chat-line__timestamp">12:34</span>
+        <span class="chat-line__username-container"><img class="chat-badge" alt="Moderator" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><span data-a-target="chat-message-username" class="chat-author__display-name">Alice_42</span></span>
+        <span aria-hidden="true">:</span>
+        <span data-a-target="chat-message-text"><span class="text-fragment">Hello world</span></span>
+      </div>
+      <div id="rich" class="chat-line__message" data-a-target="chat-line-message">
+        <span data-a-target="chat-message-username" class="chat-author__display-name">BobStreamer</span><span aria-hidden="true">:</span>
+        <span data-a-target="chat-message-text"><span class="text-fragment">Look here </span><a class="link-fragment" href="https://example.invalid/watch" target="_blank" rel="noopener">this link</a><span class="mention-fragment">@HelpfulUser</span><span class="chat-line__message--emote-button"><img class="chat-image chat-line__message--emote" alt="Kappa" title="Kappa" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></span><span class="text-fragment"> wow</span></span>
+      </div>
+      <div id="legacy" class="chat-line__message" data-a-target="chat-line-message">
+        <span data-a-target="chat-message-username" class="chat-author__display-name">LegacyName</span><span aria-hidden="true">:</span>
+        <span class="text-fragment">Good morning</span>
+      </div>
+    </div>
+    <aside id="outside">This is not a chat message.</aside>
+  </main>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Twitch 聊天汉化",
+  "version": "1.0.0",
+  "description": "在 Twitch 聊天消息原位显示简体中文，保留用户名与表情。使用 Chrome 本地翻译，无需 API Key。",
+  "minimum_chrome_version": "138",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Twitch 聊天汉化",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": ["https://www.twitch.tv/*", "https://twitch.tv/*"],
+    "js": ["translator.js", "chat-dom.js", "content.js"],
+    "css": ["chat.css"],
+    "run_at": "document_idle"
+  }]
+}

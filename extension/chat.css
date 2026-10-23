@@ -1,0 +1,6 @@
+/* Long translations can wrap without moving or restyling Twitch's chat controls. */
+.text-fragment[data-tczh-translated="true"],
+[data-a-target="chat-message-text"][data-tczh-translated="true"] {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
